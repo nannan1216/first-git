@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MonthViewController : UIViewController
+@interface MonthViewController : UIViewController<UITableViewDataSource,UITableViewDelegate> //如果是表格视图控制器的话会自动包含，普通视图控制器的话需要声明//
+@property (strong,nonatomic) IBOutlet UIImageView *image;
+@property (strong,nonatomic) IBOutlet UITableView *table;
+@property (strong,nonatomic) NSMutableArray *monthArray;
+@property (strong,nonatomic) NSMutableArray *Arr;
+
+@property (strong,nonatomic) IBOutlet UITableViewCell *nibloadedCell;
+
+-(IBAction) onButtonAdd: (id) button;
 
 @end

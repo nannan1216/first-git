@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class MonthViewController;
+@class MonthTableViewController;//声明该类//
 
 @interface MonthAppDelegate : UIResponder <UIApplicationDelegate>
 
